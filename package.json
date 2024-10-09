@@ -1,10 +1,22 @@
 {
-  "name": "lru-cache",
-  "version": "0.0.1",
-  "license": "MIT",
+  "name": "ts-lru-cache",
+  "version": "0.0.2",
+  "description": "Simple LRU cache implementation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LZhenHong/lru-cache"
+  },
   "scripts": {
     "test": "jest"
   },
+  "keywords": [
+    "lru",
+    "cache",
+    "ts",
+    "typescript"
+  ],
+  "author": "Eden",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.13",
     "@types/node": "^22.7.5",

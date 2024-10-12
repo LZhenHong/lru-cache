@@ -88,10 +88,7 @@ export default class LRUCache<K, V> {
             this.list.insertNodeAtHead(node);
         }
 
-        while (this.size > this.capacity) {
-            const tail = this.list.removeTailNode();
-            tail && this.cache.delete(tail.key);
-        }
+        this.trimTo(this.capacity);
     }
 
     get(key: K): V | undefined {
